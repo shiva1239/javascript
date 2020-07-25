@@ -1,0 +1,135 @@
+<html>
+
+<head>
+	<title>Register | EPAM</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.css">
+	<link rel="stylesheet" href="/register.css">
+  <script defer src="/validate.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+	<nav class="navbar" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+			<a class="navbar-item" href="https://bulma.io">
+				<img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+    </a>
+
+				<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+					data-target="navbarBasicExample">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+		</div>
+
+		<div id="navbarBasicExample" class="navbar-menu">
+			<div class="navbar-start">
+				<a class="navbar-item">
+					Home
+				</a>
+
+				<a class="navbar-item">
+					Documentation
+				</a>
+
+				<div class="navbar-item has-dropdown is-hoverable">
+					<a class="navbar-link">
+						More
+					</a>
+
+					<div class="navbar-dropdown">
+						<a class="navbar-item">
+							About
+						</a>
+						<a class="navbar-item">
+							Jobs
+						</a>
+						<a class="navbar-item">
+							Contact
+						</a>
+						<hr class="navbar-divider">
+						<a class="navbar-item">
+							Report an issue
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="navbar-end">
+				<div class="navbar-item">
+					<div class="buttons">
+						<a class="button is-primary">
+							<strong>Sign up</strong>
+						</a>
+						<a class="button is-light">
+							Log in
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<section class="hero is-link is-fullheight-with-navbar">
+    <form onsubmit="return validate()">
+		<div class="hero-body">
+			<div class="container parent-container">
+				<div class="box login-box">
+					<h1 class="title" style="color: black">Register</h1>
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" name="name" type="text" placeholder="e.g Alex Smith">
+            </div>
+          </div>
+					<div class="field">
+						<p class="control has-icons-left has-icons-right">
+							<input class="input" name="email" type="email" placeholder="Email">
+							<span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+							<span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+						</p>
+					</div>
+						<div class="field-label"></div>
+						<div class="field-body">
+							<div class="field is-expanded">
+								<div class="field has-addons">
+									<p class="control">
+										<a class="button is-static">
+											+91
+										</a>
+									</p>
+									<p class="control is-expanded">
+										<input class="input" name="phone" type="tel" placeholder="Your phone number">
+                  </p>
+								</div>
+								<p class="help">Do not enter the first zero</p>
+							</div>
+						</div>
+
+					<div class="field">
+						<p class="control has-icons-left">
+							<input class="input" type="password" name="password" placeholder="Password">
+							<span class="icon is-small is-left">
+                <i class="fas fa-lock"></i>
+              </span>
+						</p>
+					</div>
+					<div class="field">
+						<p class="control">
+							<button class="button is-success">
+                Register
+              </button>
+						</p>
+					</div>
+          </form>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>

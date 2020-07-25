@@ -1,0 +1,9 @@
+.parent-container {
+    display: grid;
+    place-items: center;
+}
+
+.login-box{
+  padding: 1em;
+  width: 30vw;
+}
